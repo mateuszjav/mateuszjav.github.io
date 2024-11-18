@@ -13,3 +13,9 @@
   background-position: center;
   background-attachment: fixed;
 }
+
+@mixin serviceImages($bgImg) {
+  background-image: $black-gradient, url($bgImg);
+  background-size: cover;
+  background-position: left;
+}
