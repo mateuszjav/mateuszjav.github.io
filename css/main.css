@@ -230,6 +230,8 @@ body {
   width: 300px;
   height: 450px;
   background-color: black;
+  padding: 20px;
+  text-align: justify;
 }
 .services__service::after {
   content: "";
@@ -242,6 +244,15 @@ body {
   z-index: -10000;
   box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
 }
+.services__service--heading {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.services__service--text {
+  color: white;
+}
 
 .vulcanization {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url("../img/vulcanization.jpg");
@@ -253,6 +264,19 @@ body {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url("../img/airconditioning.jpg");
   background-size: cover;
   background-position: left;
+}
+
+.mechanics {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url("../img/mechanics.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.inspection {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url("../img/inspection.jpg");
+  background-size: cover;
+  background-position: left;
+  background-position: center;
 }
 
 @media (min-width: 768px) {
@@ -273,5 +297,20 @@ body {
   }
   .burger-btn {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .services__box {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .services__service {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+  .services__service::after {
+    left: 0;
   }
 }/*# sourceMappingURL=main.css.map */
